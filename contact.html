@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xi pplg b</title>
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+<!-- feathered icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<!-- css -->
+<link rel="stylesheet" href="css/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins','sans-serif';
+    }
+    
+    body{
+        margin-top: 7rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+        min-height: 100vh;
+    }
+    
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px 50px;
+        padding: 100px 50px;
+    }
+    
+    .container .card{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 300px;
+        max-width: 100%;
+        height: 300px;
+        background-color: white;
+        box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+    
+    .container .card .img-box {
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    
+    .container .card:hover {
+        height: 400px;
+    }
+    
+    .container .card:hover .img-box {
+        top: -100px;
+        scale: 0.75;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+    }
+    
+    .container .card .img-box img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    
+    .container .card .content {
+        position: absolute;
+        top: 252px;
+        width:100%;
+        height: 35px;
+        padding: 0 30px;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .container .card:hover .content {
+        top: 130px;
+        height: 250px;
+    }
+    
+    .container .card .content h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary);
+    }
+    
+    .container .card .content p {
+        color: #333;
+        margin-top: 10px;
+    }
+    
+    .container .card .content a{
+        position: relative;
+        top: 15px;
+        display: inline-block;
+        padding: 12px 15px;
+        background-color: #009688;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+    .content span {
+        font-size: 2rem;
+    }
+    .content span.email {
+        font-size: 1.5rem;
+    }
+        </style>
+</head>
+
+
+
+<body>
+
+
+    
+    <!-- navbar start -->
+    <nav class="navbar">
+<a href="#" class="navbar-logo">nyaw<span>nyaw</span>.</a>
+
+<div class="navbar-nav ">
+    <a href="index.html">home</a>
+    <a href="aboutme.html">tentang kami</a>
+    <!-- <a href="menu.html">menu</a> -->
+    <a href="#contact.html" style="color:white">kontak</a>
+</div>
+
+<div class="navbar-extra">
+    <a href="#" id="search-button"><i data-feather="search"></i></a>
+    <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+</div>
+
+<!-- search form start -->
+<div class="search-form">
+<input type="search" id="search-box" placeholder="cari disini...">    
+<label for="search-box"><i data-feather="search"></i></label>
+</div>
+<!-- search form end -->
+
+</nav>
+<!-- navbar end -->
+<!-- contact card -->
+        <div class="container">
+    
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/profile/eny [E8913F2].png" alt="">
+                </div>
+                <div class="content">
+                    <h2><i data-feather="user"></i>nuraeny</h2>
+                    <p><i data-feather="instagram"></i><span>:cokwsu</span>
+                    <p><i data-feather="phone"></i><span class="email">:(+62)87713226605</span>
+                    </p>
+                    <a href="https://wa.me/+6287713226605">message</a>
+                </div>
+            </div>
+        </div>
+<!-- contact card end -->
+
+<!-- contact card -->
+        <div class="container">
+    
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/profile/ayu [4C96C2C].png" alt="">
+                </div>
+                <div class="content">
+                    <h2><i data-feather="user"></i>ayu andini</h2>
+                    <p><i data-feather="instagram"></i><span>ayu.aandini</span>
+                    <p><i data-feather="phone"></i><span class="email">:(+62)82310182629</span>
+                    </p>
+                    <a href="https://wa.me/+6282310182629">message</a>
+                </div>
+            </div>
+        </div>
+<!-- contact card end -->
+
+<!-- contact card -->
+        <div class="container">
+    
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/profile/ama [7D5E64F].png" alt="">
+                </div>
+                <div class="content">
+                    <h2><i data-feather="user"></i>nurriski amalia</h2>
+                    <p><i data-feather="instagram"></i><span>:nrrski.amalia</span>
+                    <p><i data-feather="phone"></i><span class="email">:(+62)81527298323</span>
+                    </p>
+                    <a href="https://wa.me/+6281527298323">message</a>
+                </div>
+            </div>
+        </div>
+<!-- contact card end -->
+
+<!-- contact card -->
+        <div class="container">
+    
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/profile/muti [8876884].png" alt="">
+                </div>
+                <div class="content">
+                    <h2><i data-feather="user"></i>mutiaramutiara8867</h2>
+                    <p><i data-feather="instagram"></i><span>:mutiaramutiara8867</span>
+                    <p><i data-feather="phone"></i><span class="email">:(+62)83174645482</span>
+                    </p>
+                    <a href="https://wa.me/+6283174645482">message</a>
+                </div>
+            </div>
+        </div>
+<!-- contact card end -->
+<!-- contact card -->
+        <div class="container">
+    
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/profile/nisa [4D9F501].png" alt="">
+                </div>
+                <div class="content">
+                    <h2><i data-feather="user"></i>st nuranisa</h2>
+                    <p><i data-feather="instagram"></i><span>: -</span>
+                    <p><i data-feather="phone"></i><span class="email">:(+62)882020696155</span>
+                    </p>
+                    <a href="https://wa.me/+62882020696155">message</a>
+                </div>
+            </div>
+        </div>
+<!-- contact card end -->
+    <!-- feathered icons penutup -->
+    <script>
+        feather.replace();
+      </script>
+
+      <!-- javascript -->
+      <script src="js/script.js"></script>
+</body>
+</html>
